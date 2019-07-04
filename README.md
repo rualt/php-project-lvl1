@@ -8,6 +8,7 @@ A set of very simple mini-games launched via console
 
 <details> 
   <summary>Gameplay example</summary>
+
     $ brain-progression
 
     Welcome to the Brain Game!
