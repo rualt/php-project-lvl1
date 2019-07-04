@@ -1,5 +1,5 @@
 {
-    "name": "rualt/brain_games",
+    "name": "rualt/brain-games",
     "bin": ["bin/brain-games"],
     "type": "project",
     "authors": [
