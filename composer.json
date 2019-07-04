@@ -1,0 +1,17 @@
+{
+    "name": "rualt/brain_games",
+    "bin": ["bin/brain-games"],
+    "type": "project",
+    "authors": [
+        {
+            "name": "rualt",
+            "email": "rualnar@gmail.com"
+        }
+    ],
+    "description": "training project",
+    "license": "MIT",
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^8.2"
+    }
+}
