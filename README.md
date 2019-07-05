@@ -2,6 +2,9 @@
 
 This is a PHP study project ([Hexlet.io](https://ru.hexlet.io/professions/php/projects/7) PHP online couse)
 
+#### [Asciicast link](https://asciinema.org/a/ftG7NZmHkXEnDprH2zTXmu0Fc)
+
+
 #### Project Description
 
 A set of very simple mini-games launched via console
