@@ -11,7 +11,9 @@
     "description": "training project",
     "license": "MIT",
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "wp-cli/php-cli-tools": "dev-master"
+    },
     "autoload": {
         "files": ["src/cli.php"]
     },
