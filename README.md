@@ -2,7 +2,7 @@
 
 This is a PHP study project ([Hexlet.io](https://ru.hexlet.io/professions/php/projects/7) PHP online couse)
 
-#### [Asciicast link](https://asciinema.org/a/ftG7NZmHkXEnDprH2zTXmu0Fc)
+#### [Asciicast link](https://asciinema.org/a/XBfaSuxZbapiBXKPrYAOPhO0n)
 
 
 #### Project Description
