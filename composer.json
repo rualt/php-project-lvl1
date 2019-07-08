@@ -14,6 +14,9 @@
     "require": {
         "wp-cli/php-cli-tools": "dev-master"
     },
+    "scripts": {
+        "phpcs": "phpcs"
+    },
     "autoload": {
         "files": ["src/cli.php"]
     },
