@@ -1,5 +1,8 @@
 # php-project-lvl1
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/bd54004c6eea132546f2/maintainability)](https://codeclimate.com/github/rualt/php-project-lvl1/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/bd54004c6eea132546f2/test_coverage)](https://codeclimate.com/github/rualt/php-project-lvl1/test_coverage)
+
 This is a PHP study project ([Hexlet.io](https://ru.hexlet.io/professions/php/projects/7) PHP online couse)
 
 #### [Asciicast link](https://asciinema.org/a/XBfaSuxZbapiBXKPrYAOPhO0n)
