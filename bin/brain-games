@@ -1,6 +1,6 @@
 #!/usr/bin/env php
 
-<?php 
+<?php
 
 use function \BrainGames\Cli\run;
 
