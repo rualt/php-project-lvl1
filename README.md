@@ -8,8 +8,11 @@ This is a PHP study project ([Hexlet.io](https://ru.hexlet.io/professions/php/pr
 
 <details> 
   <summary>Asciicast links</summary>
+  
 [Step 1](https://asciinema.org/a/ftG7NZmHkXEnDprH2zTXmu0Fc)
+
 [Step 2](https://asciinema.org/a/XBfaSuxZbapiBXKPrYAOPhO0n)
+
 [Step 4](https://asciinema.org/a/sqWEBHArXjscXcAhB9WqDiIl6)
 </details>
 
