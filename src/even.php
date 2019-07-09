@@ -15,30 +15,28 @@ function sayYes()
     line("Correct!");
 }
 
-function sayNo()
+function sayNo($ansver)
 {
-    line("Sorry, that's incorrect, try again");
+    line("'$ansver' is wrong ansver ;(. Correct answer was 'no'.");
 }
 
 function run()
 {
-    line('Welcome to the Brain Games!');
-    line('Answer "yes" if number even otherwise answer "no".');
-    
+    line("Welcome to the Brain Games!");
+    line("Answer \"yes\" if number even otherwise answer \"no\".\n");
     $name = prompt('May I have your name?');
     line("Hello, $name!");
 
-    $correctAnsv = 0;
-    $num = rand(0, 100);
-    while ($correctAnsv != 3) {
+    for ($i = 0; $i < 3;) {
         $num = rand(0, 100);
-        $ansver = prompt("Question: $num");
+        line("Question: $num");
+        $ansver = prompt('Your answer');
         if (isEven($num) === $ansver) {
             sayYes();
-            $correctAnsv += 1;
+            $i++;
         } else {
-            sayNo();
+            sayNo($ansver);
         }
     }
-    line("Congratulations, $name!");
+    line("\nCongratulations, $name!");
 }
