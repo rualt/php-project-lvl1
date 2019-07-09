@@ -15,9 +15,10 @@ function sayYes()
     line("Correct!");
 }
 
-function sayNo($ansver)
+function sayNo($ansver, $number)
 {
-    line("'$ansver' is wrong ansver ;(. Correct answer was 'no'.");
+    $correctAnsver = isEven($number);
+    line("'{$ansver}' is wrong ansver ;(. Correct answer was '{$correctAnsver}'.");
 }
 
 function run()
@@ -25,17 +26,17 @@ function run()
     line("Welcome to the Brain Games!");
     line("Answer \"yes\" if number even otherwise answer \"no\".\n");
     $name = prompt('May I have your name?');
-    line("Hello, $name!");
+    line("Hello, $name!\n");
 
     for ($i = 0; $i < 3;) {
-        $num = rand(0, 100);
-        line("Question: $num");
+        $number = rand(0, 100);
+        line("Question: $number");
         $ansver = prompt('Your answer');
-        if (isEven($num) === $ansver) {
+        if (isEven($number) === $ansver) {
             sayYes();
             $i++;
         } else {
-            sayNo($ansver);
+            sayNo($ansver, $number);
         }
     }
     line("\nCongratulations, $name!");
