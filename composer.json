@@ -1,7 +1,7 @@
 {
     "name": "rualt/brain-games",
     "bin": [
-        "bin/Games/brain-even", 
+        "bin/brain-even", 
         "bin/brain-games"
     ],
     "type": "project",
