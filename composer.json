@@ -1,8 +1,9 @@
 {
     "name": "rualt/brain-games",
     "bin": [
-        "bin/brain-even", 
-        "bin/brain-games"
+        "bin/brain-games",
+        "bin/brain-even",
+        "bin/brain-calc"
     ],
     "type": "project",
     "authors": [
@@ -23,7 +24,8 @@
     "autoload": {
         "files": [
             "src/cli.php",
-            "src/Games/even.php"
+            "src/Games/even.php",
+            "src/Games/calc.php"
         ]
     },
     "require-dev": {
