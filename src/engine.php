@@ -5,39 +5,33 @@ namespace BrainGames\Engine;
 use function \cli\line;
 use function \cli\prompt;
 
-function isEven($number)
-{
-    return $number % 2 === 0 ? 'yes' : 'no';
-}
-
 function sayYes()
 {
     line("Correct!");
 }
 
-function sayNo($ansver, $number)
+function sayNo($answer, $correctAnswer, $name)
 {
-    $correctAnsver = isEven($number);
-    line("'{$ansver}' is wrong ansver ;(. Correct answer was '{$correctAnsver}'.");
+    line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'.");
+    line("Let's try again, $name!");
 }
 
-function run()
+function startGame($description, $gameData)
 {
     line("Welcome to the Brain Games!");
-    line("Answer \"yes\" if number even otherwise answer \"no\".\n");
+    line($description);
     $name = prompt('May I have your name?');
     line("Hello, $name!\n");
 
-    for ($i = 0; $i < 3;) {
-        $number = rand(0, 100);
-        line("Question: $number");
-        $ansver = prompt('Your answer');
-        if (isEven($number) === $ansver) {
+    for ($i = 0; $i < 3; $i++) {
+        [$question, $correctAnswer] = $gameData();
+        line("Question: $question");
+        $answer = prompt('Your answer');
+        if ($correctAnswer === $answer) {
             sayYes();
-            $i++;
         } else {
-            sayNo($ansver, $number);
+            return sayNo($answer, $correctAnswer, $name);
         }
     }
-    line("\nCongratulations, $name!");
+    return line("\nCongratulations, $name!");
 }
