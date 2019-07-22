@@ -5,11 +5,6 @@ namespace BrainGames\Engine;
 use function \cli\line;
 use function \cli\prompt;
 
-function sayYes()
-{
-    line("Correct!");
-}
-
 function sayNo($answer, $correctAnswer, $name)
 {
     line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'.");
@@ -28,7 +23,7 @@ function startGame($description, $gameData)
         line("Question: $question");
         $answer = prompt('Your answer');
         if ($correctAnswer === $answer) {
-            sayYes();
+            line("Correct!");
         } else {
             return sayNo($answer, $correctAnswer, $name);
         }
