@@ -18,7 +18,9 @@ This is a PHP study project ([Hexlet.io](https://ru.hexlet.io/professions/php/pr
 
 [Step 6](https://asciinema.org/a/en6eHpHoRpyET0SYbvEFTziZY)
 
-[Step 7](https://asciinema.org/a/lBP0Mhz6v989xRJPHkVIKg4a9)
+[Step 7](https://asciinema.org/a/yTNjld0gQTMNJBqi6eN4vXuDJ)
+
+[Step 8](https://asciinema.org/a/LsLECQwBgNybHBCJRXphL9HpJ)
 </details>
 
 #### Project Description
