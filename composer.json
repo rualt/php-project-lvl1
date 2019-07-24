@@ -9,18 +9,16 @@
         "bin/brain-prime"
     ],
     "type": "project",
+    "keywords": ["brain games", "Hexlet"],
     "authors": [
         {
             "name": "rualt",
             "email": "rualnar@gmail.com"
         }
     ],
-    "description": "training project",
+    "description": "study project (Hexlet PHP online course)",
     "license": "MIT",
     "minimum-stability": "dev",
-    "require": {
-        "wp-cli/php-cli-tools": "dev-master"
-    },
     "scripts": {
         "phpcs": "phpcs"
     },
@@ -35,7 +33,10 @@
             "src/Games/prime.php"
         ]
     },
+    "require": {
+        "wp-cli/php-cli-tools": "dev-master"
+    },
     "require-dev": {
-        "squizlabs/php_codesniffer": "^3.0@dev"
+        "squizlabs/php_codesniffer": "*"
     }
 }
