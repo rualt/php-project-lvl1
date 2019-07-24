@@ -4,25 +4,23 @@ namespace BrainGames\Prime;
 
 use function \BrainGames\Engine\startGame;
 
-function makeRandProgression()
+function isPrime($number)
 {
-    $progression = [rand(0, 80)];
-    for ($i = 0; $i < 10; $i++) {
-        $progression[] = $progression[$i] + 2;
+    for ($i=2; $i*$i <= $number; $i++) {
+        if ($number % $i === 0) {
+            return false;
+        }
+        return true;
     }
-    return $progression;
 }
 
 function runGame()
 {
-    $description = "What number is missing in the progression?\n";
+    $description = "Answer \"yes\" if given number is prime, otherwise answer \"no\".\n";
     $gameData = function () {
-        $progression = makeRandProgression();
-        $randKey = rand(0, 9);
-        $correctAnswer = $progression[$randKey];
-        $progression[$randKey] = '..';
-        $question = implode(' ', $progression);
-        return ["$question", "$correctAnswer"];
+        $question = rand(0, 100);
+        $correctAnswer = isPrime($question) ? 'yes' : 'no';
+        return [$question, $correctAnswer];
     };
     startGame($description, $gameData);
 }
