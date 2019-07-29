@@ -6,7 +6,7 @@ use function \BrainGames\Engine\startGame;
 
 function runGame()
 {
-    $description = "What is the result of the expression?\n";
+    $description = 'What is the result of the expression?';
 
     $correctAnswer = 0;
     $gameData = function () {

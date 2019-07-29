@@ -16,7 +16,7 @@ function makeRandProgression()
 
 function runGame()
 {
-    $description = "What number is missing in the progression?\n";
+    $description = 'What number is missing in the progression?';
     $gameData = function () {
         $progression = makeRandProgression();
         $randKey = rand(0, 9);

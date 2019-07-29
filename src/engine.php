@@ -14,7 +14,7 @@ function sayNo($answer, $correctAnswer, $name)
 function startGame($description, $gameData)
 {
     line("Welcome to the Brain Games!");
-    line($description);
+    line("$description\n");
     $name = prompt('May I have your name?');
     line("Hello, $name!\n");
 

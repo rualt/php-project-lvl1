@@ -17,7 +17,7 @@ function makeDivisorList($number)
 
 function runGame()
 {
-    $description = "Find the greatest common divisor of given numbers.\n";
+    $description = 'Find the greatest common divisor of given numbers.';
     $gameData = function () {
         $num1 = rand(1, 100);
         $num2 = rand(1, 100);
