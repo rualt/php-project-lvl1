@@ -10,7 +10,8 @@ function runGame()
 
     $correctAnswer = 0;
     $gameData = function () {
-        [$num1, $num2] = [rand(1, 10), rand(1, 10)];
+        $num1 = rand(1, 10);
+        $num2 = rand(1, 10);
         $operators = ['+', '-', '*'];
         $operator = $operators[rand(0, 2)];
         $question = "{$num1} {$operator} {$num2}";
