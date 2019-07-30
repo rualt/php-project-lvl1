@@ -11,7 +11,7 @@ function sayNo($answer, $correctAnswer, $name)
     line("Let's try again, $name!");
 }
 
-function startGame($description, $gameData)
+function runGame($description, $gameData)
 {
     line("Welcome to the Brain Games!");
     line("$description\n");
