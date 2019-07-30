@@ -33,7 +33,7 @@ function runGame()
                 $correctAnswer = $num1 * $num2;
                 break;
         }
-        return ["$question", "$correctAnswer"];
+        return [$question, "$correctAnswer"];
     };
     startGame($description, $gameData);
 }
