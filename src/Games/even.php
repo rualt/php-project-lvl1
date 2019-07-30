@@ -11,7 +11,7 @@ function isEven($number)
 
 function runGame()
 {
-    $description = "Answer 'yes' if number even, otherwise answer 'no'.";
+    $description = 'Answer "yes" if number even, otherwise answer "no".';
     $gameData = function () {
         $question = rand(0, 100);
         $correctAnswer = isEven($question) ? 'yes' : 'no';
