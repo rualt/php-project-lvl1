@@ -2,7 +2,7 @@
 
 namespace BrainGames\Gcd;
 
-use function \BrainGames\Engine\startGame;
+use function \BrainGames\Engine\runGame;
 
 function makeDivisorList($number)
 {

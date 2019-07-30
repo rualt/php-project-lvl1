@@ -2,7 +2,7 @@
 
 namespace BrainGames\Calc;
 
-use function \BrainGames\Engine\startGame;
+use function \BrainGames\Engine\runGame;
 
 function getRandOperator()
 {
