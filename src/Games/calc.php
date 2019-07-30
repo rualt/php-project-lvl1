@@ -12,7 +12,7 @@ function getRandOperator()
     return $operators[$randKey];
 }
 
-function runGame()
+function calcGame()
 {
     $description = 'What is the result of the expression?';
 
@@ -35,5 +35,5 @@ function runGame()
         }
         return [$question, "$correctAnswer"];
     };
-    startGame($description, $gameData);
+    runGame($description, $gameData);
 }

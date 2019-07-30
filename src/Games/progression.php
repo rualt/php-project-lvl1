@@ -14,7 +14,7 @@ function makeRandProgression()
     return $progression;
 }
 
-function runGame()
+function calcGame()
 {
     $description = 'What number is missing in the progression?';
     $gameData = function () {
@@ -25,5 +25,5 @@ function runGame()
         $question = implode(' ', $progression);
         return ["$question", "$correctAnswer"];
     };
-    startGame($description, $gameData);
+    runGame($description, $gameData);
 }

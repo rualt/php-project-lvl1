@@ -9,7 +9,7 @@ function isEven($number)
     return $number % 2 === 0;
 }
 
-function runGame()
+function calcGame()
 {
     $description = 'Answer "yes" if number even, otherwise answer "no".';
     $gameData = function () {
@@ -17,5 +17,5 @@ function runGame()
         $correctAnswer = isEven($question) ? 'yes' : 'no';
         return [$question, $correctAnswer];
     };
-    startGame($description, $gameData);
+    runGame($description, $gameData);
 }

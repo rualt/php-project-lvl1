@@ -14,7 +14,7 @@ function isPrime($number)
     }
 }
 
-function runGame()
+function calcGame()
 {
     $description = 'Answer "yes" if given number is prime, otherwise answer "no".';
     $gameData = function () {
@@ -22,5 +22,5 @@ function runGame()
         $correctAnswer = isPrime($question) ? 'yes' : 'no';
         return [$question, $correctAnswer];
     };
-    startGame($description, $gameData);
+    runGame($description, $gameData);
 }

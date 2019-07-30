@@ -15,7 +15,7 @@ function makeDivisorList($number)
     return $result;
 }
 
-function runGame()
+function calcGame()
 {
     $description = 'Find the greatest common divisor of given numbers.';
     $gameData = function () {
@@ -26,5 +26,5 @@ function runGame()
         $correctAnswer = end($commonDivisors);
         return [$question, "$correctAnswer"];
     };
-    startGame($description, $gameData);
+    runGame($description, $gameData);
 }
