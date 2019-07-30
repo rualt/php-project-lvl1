@@ -21,7 +21,7 @@ function runGame()
     $gameData = function () {
         $num1 = rand(1, 100);
         $num2 = rand(1, 100);
-        $question = ("{$num1} {$num2}");
+        $question = "$num1 $num2";
         $commonDivisors = array_intersect(makeDivisorList($num1), makeDivisorList($num2));
         $correctAnswer = end($commonDivisors);
         return [$question, "$correctAnswer"];
