@@ -5,6 +5,8 @@ namespace BrainGames\Engine;
 use function \cli\line;
 use function \cli\prompt;
 
+const GAME_ROUND = 3;
+
 function sayNo($answer, $correctAnswer, $name)
 {
     line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'.");
@@ -18,7 +20,7 @@ function runGame($description, $gameData)
     $name = prompt('May I have your name?');
     line("Hello, $name!\n");
 
-    for ($i = 0; $i < 3; $i++) {
+    for ($i = 0; $i < GAME_ROUND; $i++) {
         [$question, $correctAnswer] = $gameData();
         line("Question: $question");
         $answer = prompt('Your answer');
