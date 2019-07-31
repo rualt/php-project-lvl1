@@ -4,15 +4,12 @@ namespace BrainGames\Gcd;
 
 use function \BrainGames\Engine\runGame;
 
-function makeDivisorList($number)
+function calcGcd($num1, $num2)
 {
-    $result = [];
-    for ($i = 1; $i <= $number; $i++) {
-        if ($number % $i === 0) {
-            $result[] = $i;
-        }
-    }
-    return $result;
+    $biggerNum = $num1 > $num2 ? $num1 : $num2;
+    $smallerNum = $num1 > $num2 ? $num2 : $num1;
+    $remainder = $biggerNum % $smallerNum;
+    return $remainder == 0 ? $smallerNum : calcGcd($smallerNum, $remainder);
 }
 
 function calcGame()
@@ -22,8 +19,7 @@ function calcGame()
         $num1 = rand(1, 100);
         $num2 = rand(1, 100);
         $question = "$num1 $num2";
-        $commonDivisors = array_intersect(makeDivisorList($num1), makeDivisorList($num2));
-        $correctAnswer = end($commonDivisors);
+        $correctAnswer = calcGcd($num1, $num2);
         return [$question, "$correctAnswer"];
     };
     runGame($description, $getGameData);
