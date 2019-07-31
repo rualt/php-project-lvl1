@@ -12,10 +12,10 @@ function isEven($number)
 function calcGame()
 {
     $description = 'Answer "yes" if number even, otherwise answer "no".';
-    $gameData = function () {
+    $getGameData = function () {
         $question = rand(0, 100);
         $correctAnswer = isEven($question) ? 'yes' : 'no';
         return [$question, $correctAnswer];
     };
-    runGame($description, $gameData);
+    runGame($description, $getGameData);
 }

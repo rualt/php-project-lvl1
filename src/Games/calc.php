@@ -17,7 +17,7 @@ function calcGame()
     $description = 'What is the result of the expression?';
 
     $correctAnswer = 0;
-    $gameData = function () {
+    $getGameData = function () {
         $num1 = rand(1, 10);
         $num2 = rand(1, 10);
         $operator = getRandOperator();
@@ -35,5 +35,5 @@ function calcGame()
         }
         return [$question, "$correctAnswer"];
     };
-    runGame($description, $gameData);
+    runGame($description, $getGameData);
 }
