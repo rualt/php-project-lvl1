@@ -7,12 +7,6 @@ use function \cli\prompt;
 
 const GAME_ROUND = 3;
 
-function sayNo($answer, $correctAnswer, $name)
-{
-    line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'.");
-    line("Let's try again, $name!");
-}
-
 function runGame($description, $gameData)
 {
     line("Welcome to the Brain Games!");
@@ -27,7 +21,8 @@ function runGame($description, $gameData)
         if ($correctAnswer === $answer) {
             line("Correct!");
         } else {
-            return sayNo($answer, $correctAnswer, $name);
+            line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'.");
+            return line("Let's try again, $name!");
         }
     }
     return line("Congratulations, $name!");
