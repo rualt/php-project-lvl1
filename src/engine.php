@@ -28,5 +28,5 @@ function runGame($description, $gameData)
             return sayNo($answer, $correctAnswer, $name);
         }
     }
-    return line("\nCongratulations, $name!");
+    return line("Congratulations, $name!");
 }
