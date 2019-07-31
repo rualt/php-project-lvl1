@@ -4,13 +4,7 @@ namespace BrainGames\Calc;
 
 use function \BrainGames\Engine\runGame;
 
-function getRandOperator()
-{
-    $operators = ['+', '-', '*'];
-    $lastKey = count($operators) - 1;
-    $randKey = rand(0, $lastKey);
-    return $operators[$randKey];
-}
+const OPERATORS = ['+', '-', '*'];
 
 function calcGame()
 {
@@ -20,7 +14,8 @@ function calcGame()
     $getGameData = function () {
         $num1 = rand(1, 10);
         $num2 = rand(1, 10);
-        $operator = getRandOperator();
+        $randKey = rand(0, count(OPERATORS) - 1);
+        $operator = OPERATORS[$randKey];
         $question = "$num1 $operator $num2";
         switch ($operator) {
             case '+':
