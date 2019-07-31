@@ -6,14 +6,15 @@ use function \BrainGames\Engine\runGame;
 
 function isPrime($number)
 {
-    $bottomBorder = 2;
-    $topBorder = $number / 2;
-    for ($i = $bottomBorder; $i <= $topBorder; $i++) {
+    if ($number < 2) {
+        return false;
+    }
+    for ($i = 2; pow($i, 2) <= $number; $i++) {
         if ($number % $i === 0) {
             return false;
         }
-        return true;
     }
+    return true;
 }
 
 function calcGame()
