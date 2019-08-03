@@ -22,8 +22,9 @@ function runGame($description, $getGameData)
             line("Correct!");
         } else {
             line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'.");
-            return line("Let's try again, $name!");
+            line("Let's try again, $name!");
+            exit;
         }
     }
-    return line("Congratulations, $name!");
+    line("Congratulations, $name!");
 }
