@@ -19,7 +19,7 @@ function runGame($description, $getGameData)
         line("Question: $question");
         $answer = prompt('Your answer');
         if ($correctAnswer === $answer) {
-            line("Correct!");
+            line('Correct!');
         } else {
             line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'.");
             line("Let's try again, $name!");
