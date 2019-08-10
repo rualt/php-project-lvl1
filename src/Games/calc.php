@@ -25,7 +25,7 @@ function calcGame()
                 $correctAnswer = $num1 * $num2;
                 break;
         }
-        return [$question, "$correctAnswer"];
+        return [$question, (string) $correctAnswer];
     };
     runGame(DESCRIPTION, $getGameData);
 }

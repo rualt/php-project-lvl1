@@ -25,7 +25,7 @@ function calcGame()
         $correctAnswer = $progression[$randKey];
         $progression[$randKey] = '..';
         $question = implode(' ', $progression);
-        return [$question, "$correctAnswer"];
+        return [$question, (string) $correctAnswer];
     };
     runGame(DESCRIPTION, $getGameData);
 }

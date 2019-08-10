@@ -21,7 +21,7 @@ function calcGame()
         $num2 = rand(1, 100);
         $question = "$num1 $num2";
         $correctAnswer = calcGcd($num1, $num2);
-        return [$question, "$correctAnswer"];
+        return [$question, (string) $correctAnswer];
     };
     runGame(DESCRIPTION, $getGameData);
 }
