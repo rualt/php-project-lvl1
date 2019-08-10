@@ -12,8 +12,7 @@ function calcGame()
     $getGameData = function () {
         $num1 = rand(1, 10);
         $num2 = rand(1, 10);
-        $randKey = rand(0, count(OPERATORS) - 1);
-        $operator = OPERATORS[$randKey];
+        $operator = OPERATORS[rand(0, count(OPERATORS) - 1)];
         $question = "$num1 $operator $num2";
         switch ($operator) {
             case '+':
