@@ -7,11 +7,11 @@ use function \BrainGames\Engine\runGame;
 const PROGRESSION_LENGTH = 10;
 const DESCRIPTION = 'What number is missing in the progression?';
 
-function makeProgression($firstNum, $difference)
+function makeProgression($initialTerm, $commonDifference)
 {
-    $progression[] = $firstNum;
+    $progression[] = $initialTerm;
     for ($i = 0; $i < PROGRESSION_LENGTH - 1; $i++) {
-        $progression[] = $progression[$i] + $difference;
+        $progression[] = $progression[$i] + $commonDifference;
     }
     return $progression;
 }
@@ -19,10 +19,12 @@ function makeProgression($firstNum, $difference)
 function calcGame()
 {
     $getGameData = function () {
-        $progression = makeProgression(rand(0, 80), rand(2, 4));
-        $randKey = rand(0, count($progression) - 1);
-        $correctAnswer = $progression[$randKey];
-        $progression[$randKey] = '..';
+        $initialTerm = rand(0, 100);
+        $commonDifference = rand(2, 4);
+        $progression = makeProgression($initialTerm, $commonDifference);
+        $termKey = rand(0, PROGRESSION_LENGTH - 1);
+        $correctAnswer = $progression[$termKey];
+        $progression[$termKey] = '..';
         $question = implode(' ', $progression);
         return [$question, (string) $correctAnswer];
     };
