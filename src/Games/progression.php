@@ -4,6 +4,8 @@ namespace BrainGames\Progression;
 
 use function \BrainGames\Engine\runGame;
 
+const DESCRIPTION = 'What number is missing in the progression?';
+
 function makeProgression($firstNum, $difference)
 {
     $progressionLength = 10;
@@ -16,7 +18,6 @@ function makeProgression($firstNum, $difference)
 
 function calcGame()
 {
-    $description = 'What number is missing in the progression?';
     $getGameData = function () {
         $progression = makeProgression(rand(0, 80), rand(2, 4));
         $progressionLength = count($progression);
@@ -26,5 +27,5 @@ function calcGame()
         $question = implode(' ', $progression);
         return [$question, "$correctAnswer"];
     };
-    runGame($description, $getGameData);
+    runGame(DESCRIPTION, $getGameData);
 }
