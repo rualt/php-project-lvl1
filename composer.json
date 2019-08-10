@@ -17,7 +17,6 @@
     ],
     "description": "study project (Hexlet PHP online course)",
     "license": "MIT",
-    "minimum-stability": "dev",
     "scripts": {
         "phpcs": "phpcs"
     },
@@ -32,9 +31,9 @@
         ]
     },
     "require": {
-        "wp-cli/php-cli-tools": "dev-master"
+        "wp-cli/php-cli-tools": "~0.11"
     },
     "require-dev": {
-        "squizlabs/php_codesniffer": "*"
+        "squizlabs/php_codesniffer": "~3.4"
     }
 }

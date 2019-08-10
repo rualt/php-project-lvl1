@@ -4,11 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e747b572f66708416892904dad408563",
+    "content-hash": "cfc6be9881bc8f4861e7e3669bf8d3d5",
     "packages": [
         {
             "name": "wp-cli/php-cli-tools",
-            "version": "dev-master",
+            "version": "v0.11.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/php-cli-tools.git",
@@ -39,13 +39,13 @@
             "authors": [
                 {
                     "name": "James Logsdon",
-                    "email": "jlogsdon@php.net",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "jlogsdon@php.net"
                 },
                 {
                     "name": "Daniel Bachhuber",
-                    "email": "daniel@handbuilt.co",
-                    "role": "Maintainer"
+                    "role": "Maintainer",
+                    "email": "daniel@handbuilt.co"
                 }
             ],
             "description": "Console utilities for PHP",
@@ -60,16 +60,16 @@
     "packages-dev": [
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "dev-master",
+            "version": "3.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "f6fd84859659ab25d74646e7eff7397f009e258e"
+                "reference": "b8a7362af1cc1aadb5bd36c3defc4dda2cf5f0a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/f6fd84859659ab25d74646e7eff7397f009e258e",
-                "reference": "f6fd84859659ab25d74646e7eff7397f009e258e",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/b8a7362af1cc1aadb5bd36c3defc4dda2cf5f0a8",
+                "reference": "b8a7362af1cc1aadb5bd36c3defc4dda2cf5f0a8",
                 "shasum": ""
             },
             "require": {
@@ -107,15 +107,12 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2019-07-04T06:00:06+00:00"
+            "time": "2019-04-10T23:49:02+00:00"
         }
     ],
     "aliases": [],
-    "minimum-stability": "dev",
-    "stability-flags": {
-        "wp-cli/php-cli-tools": 20,
-        "squizlabs/php_codesniffer": 20
-    },
+    "minimum-stability": "stable",
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
