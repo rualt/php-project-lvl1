@@ -11,7 +11,7 @@ function makeProgression($initialTerm, $commonDifference)
 {
     $progression[] = $initialTerm;
     for ($i = 1; $i < PROGRESSION_TERMS_COUNT; $i++) {
-        $progression[] = $progression[$i-1] + $commonDifference;
+        $progression[] = $progression[$i - 1] + $commonDifference;
     }
     return $progression;
 }
