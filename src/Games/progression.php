@@ -16,7 +16,7 @@ function makeProgression($initialTerm, $commonDifference)
     return $progression;
 }
 
-function calcGame()
+function makeGame()
 {
     $getGameData = function () {
         $initialTerm = rand(0, 100);

@@ -14,7 +14,7 @@ function getGcd($num1, $num2)
     return $remainder == 0 ? $smallerNum : getGcd($smallerNum, $remainder);
 }
 
-function calcGame()
+function makeGame()
 {
     $getGameData = function () {
         $num1 = rand(1, 100);

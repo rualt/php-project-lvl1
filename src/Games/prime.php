@@ -19,7 +19,7 @@ function isPrime($number)
     return true;
 }
 
-function calcGame()
+function makeGame()
 {
     $getGameData = function () {
         $question = rand(-10, 100);

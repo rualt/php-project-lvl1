@@ -7,7 +7,7 @@ use function \BrainGames\Engine\runGame;
 const DESCRIPTION = 'What is the result of the expression?';
 const OPERATORS = ['+', '-', '*'];
 
-function calcGame()
+function makeGame()
 {
     $getGameData = function () {
         $num1 = rand(1, 10);
