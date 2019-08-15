@@ -41,16 +41,17 @@ Find out if a random number is prime and write 'yes' or 'no'.
 Find a missing number of a random progression.
 </details>
 
+
 <details> 
   <summary>Gameplay examples</summary>
 
-[brain-even](https://asciinema.org/a/sqWEBHArXjscXcAhB9WqDiIl6)
-
 [brain-calc](https://asciinema.org/a/9SmPU43HU6kryznUH5VJNXCDW)
+
+[brain-even](https://asciinema.org/a/sqWEBHArXjscXcAhB9WqDiIl6)
 
 [brain-gcd](https://asciinema.org/a/en6eHpHoRpyET0SYbvEFTziZY)
 
-[brain-prime](https://asciinema.org/a/yTNjld0gQTMNJBqi6eN4vXuDJ)
+[brain-prime](https://asciinema.org/a/LsLECQwBgNybHBCJRXphL9HpJ)
 
-[brain-progression](https://asciinema.org/a/LsLECQwBgNybHBCJRXphL9HpJ)
+[brain-progression](https://asciinema.org/a/yTNjld0gQTMNJBqi6eN4vXuDJ)
 </details>
