@@ -4,8 +4,8 @@ namespace BrainGames\Progression;
 
 use function \BrainGames\Engine\runGame;
 
-const PROGRESSION_TERMS_COUNT = 10;
 const DESCRIPTION = 'What number is missing in the progression?';
+const PROGRESSION_TERMS_COUNT = 10;
 
 function makeProgression($initialTerm, $commonDifference)
 {
