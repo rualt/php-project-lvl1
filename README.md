@@ -5,54 +5,52 @@
 
 This is a PHP study project ([Hexlet.io](https://ru.hexlet.io/professions/php/projects/7) PHP online couse)
 
-<details> 
-  <summary>Asciicast links</summary>
-  
-[Step 1](https://asciinema.org/a/ftG7NZmHkXEnDprH2zTXmu0Fc)
+### Project Description
 
-[Step 2](https://asciinema.org/a/XBfaSuxZbapiBXKPrYAOPhO0n)
+A set of primitive mini-games launched via console. 
 
-[Step 4](https://asciinema.org/a/sqWEBHArXjscXcAhB9WqDiIl6)
+#### How to install
+`$ composer global require rualt/brain-games`
 
-[Step 5](https://asciinema.org/a/9SmPU43HU6kryznUH5VJNXCDW)
+#### How to play
 
-[Step 6](https://asciinema.org/a/en6eHpHoRpyET0SYbvEFTziZY)
-
-[Step 7](https://asciinema.org/a/yTNjld0gQTMNJBqi6eN4vXuDJ)
-
-[Step 8](https://asciinema.org/a/LsLECQwBgNybHBCJRXphL9HpJ)
-</details>
-
-#### Project Description
-
-A set of very simple mini-games launched via console
+You can choose of 5 different games.
+To win you have to give 3 correct answers in a row.
 
 <details> 
-  <summary>Gameplay example</summary>
+  <summary>List of games</summary>
 
-    $ brain-progression
+`$ brain-calc`
 
-    Welcome to the Brain Game!
-    What number is missing in this progression?
+Find result of a random expression.
 
-    May I have your name? Roman
-    Hello, Roman!
+`$ brain-even`
 
-    Question: 14 .. 18 20 22 24 26 28
-    Your answer: 16
-    Correct!
-    Question: 5 6 7 8 9 .. 11 12
-    Your answer: 10
-    Correct!
-    Question: 12 15 18 21 .. 27 30 33
-    Your answer: 24
-    Correct!
-    Congratulations, Roman!
+Find out if a random number is even and write 'yes' or 'no'.
+
+`$ brain-gcd`
+
+Find a GCD of two random numbers.
+
+`$ brain-prime`
+
+Find out if a random number is prime and write 'yes' or 'no'.
+
+`$ brain-progression`
+
+Find a missing number of a random progression.
 </details>
 
-#### Goals
- - consolidate knowledge,
- - gain PHP development skills,
- - learn how to setup a working environment for development,
- - gain basic skills of working with repositories, code quality analyzer and dependency manager using Composer,
- - get comfortable with Git and GitHub.
+<details> 
+  <summary>Gameplay examples</summary>
+
+[brain-even](https://asciinema.org/a/sqWEBHArXjscXcAhB9WqDiIl6)
+
+[brain-calc](https://asciinema.org/a/9SmPU43HU6kryznUH5VJNXCDW)
+
+[brain-gcd](https://asciinema.org/a/en6eHpHoRpyET0SYbvEFTziZY)
+
+[brain-prime](https://asciinema.org/a/yTNjld0gQTMNJBqi6eN4vXuDJ)
+
+[brain-progression](https://asciinema.org/a/LsLECQwBgNybHBCJRXphL9HpJ)
+</details>
